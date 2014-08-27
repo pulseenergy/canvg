@@ -194,7 +194,7 @@
 		
 		// parse xml
 		svg.parseXml = function(xml) {
-			xml = xml.replace(/xmlns=\"http:\/\/www\.w3\.org\/2000\/svg\"/, '');
+//			xml = xml.replace(/xmlns=\"http:\/\/www\.w3\.org\/2000\/svg\"/, ''); // might need this for ie9
 			if (typeof(Windows) != 'undefined' && typeof(Windows.Data) != 'undefined' && typeof(Windows.Data.Xml) != 'undefined') {
 				var xmlDoc = new Windows.Data.Xml.Dom.XmlDocument();
 				var settings = new Windows.Data.Xml.Dom.XmlLoadSettings();
